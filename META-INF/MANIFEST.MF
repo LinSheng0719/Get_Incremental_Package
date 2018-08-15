@@ -1,4 +1,4 @@
-Manifest-Version: 1.0
+Manifest-Version: 1.1
 Bundle-ManifestVersion: 2
 Bundle-Name: Get_Incremental_Package
 Bundle-SymbolicName: Get_Incremental_Package;singleton:=true
@@ -7,4 +7,4 @@ Bundle-Activator: get_incremental_package.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Eclipse-AutoStart: true
+Bundle-ActivationPolicy: lazy

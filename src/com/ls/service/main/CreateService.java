@@ -49,23 +49,22 @@ public class CreateService {
 		if (now_time < mody_time)
 			return true;
 		project_file = info.getProject_path().getAbsolutePath();
-		class_file = info.getProject_class().getAbsolutePath();
 		web_file = info.getProject_webRoot().getAbsolutePath();
 		out_file = info.getProject_out_path().getAbsolutePath();
 		profile_length = project_file.length();
 
 		// class文件复制
-		copyClassFile(new File(project_file + File.separator + "src"));
+		//copyClassFile(new File(project_file + File.separator + "src"));
 		// 其它目录复制
 		copyFile(new File(web_file));
 
 		return true;
 	}
 
-	private void copyFile(File file) throws IOException {
+	public void copyFile(File file) throws IOException {
 
-		if (file.getAbsolutePath().equals(class_file))
-			return;
+		/*if (file.getAbsolutePath().equals(class_file))
+			return;*/
 
 		if (file.isDirectory()) {
 			File[] fileList = file.listFiles();
@@ -74,7 +73,7 @@ public class CreateService {
 			}
 		} else {
 			long fileTime = file.lastModified();
-			if (now_time > fileTime && fileTime > mody_time) {
+			if (fileTime > mody_time) {
 				String sourcepath = file.getAbsolutePath();
 				String copypath = out_file + sourcepath.substring(profile_length);
 				FileUtils.copyFile(file, new File(copypath));
@@ -84,7 +83,7 @@ public class CreateService {
 
 	}
 
-	private void copyClassFile(File file) throws IOException {
+	public void copyClassFile(File file) throws IOException {
 
 		if (file.isDirectory() && !file.getAbsolutePath().equals(class_file)) {
 			File[] fileList = file.listFiles();

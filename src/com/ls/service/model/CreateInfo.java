@@ -17,7 +17,6 @@ public class CreateInfo {
 	private Date modify_datetime;
 	private File project_path;
 	private File project_webRoot;
-	private File project_class;
 	private File project_out_path;
 	
 	public CreateInfo(){}
@@ -29,11 +28,10 @@ public class CreateInfo {
 	 * @param project_class
 	 * @param project_out_path
 	 */
-	public CreateInfo(Date modify_datetime, File project_path, File project_webRoot, File project_class, File project_out_path) {
+	public CreateInfo(Date modify_datetime, File project_path, File project_webRoot,File project_out_path) {
 		this.modify_datetime = modify_datetime;
 		this.project_path = project_path;
 		this.project_webRoot = project_webRoot;
-		this.project_class = project_class;
 		this.project_out_path = project_out_path;
 	}
 	
@@ -54,12 +52,6 @@ public class CreateInfo {
 	}
 	public void setProject_webRoot(File project_webRoot) {
 		this.project_webRoot = project_webRoot;
-	}
-	public File getProject_class() {
-		return project_class;
-	}
-	public void setProject_class(File project_class) {
-		this.project_class = project_class;
 	}
 	public File getProject_out_path() {
 		return project_out_path;

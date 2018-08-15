@@ -16,10 +16,10 @@
             </separator>
          </menu>
          <action
-               label="&amp;生成增量包"
+               label="&amp;增量包工具"
                icon="icons/sample.png"
                class="get_incremental_package.actions.SampleAction"
-               tooltip="生成增量包"
+               tooltip="增量包工具"
                menubarPath="sampleMenu/sampleGroup"
                toolbarPath="sampleGroup"
                id="get_incremental_package.actions.SampleAction">
