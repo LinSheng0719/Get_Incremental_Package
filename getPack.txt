@@ -1,0 +1,7 @@
+#2016-02-03 14:28:01.120
+#Wed Feb 03 14:28:01 CST 2016
+modify_datetime=20160203 11\:00
+project_path=D\:\\zzz_ndasec_workspace_new\\hps2.0
+project_webRoot=D\:\\zzz_ndasec_workspace_new\\hps2.0\\WebRoot
+project_out_path=C\:\\Users\\linsheng\\Desktop\\pack1
+project_class=D\:\\zzz_ndasec_workspace_new\\hps2.0\\WebRoot\\WEB-INF\\classes
